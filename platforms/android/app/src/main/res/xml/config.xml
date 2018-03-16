@@ -2,12 +2,18 @@
 <widget id="com.cosoftstudios.percentagecalculator" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Basic Percentage Calculator</name>
     <description>
-        A blank PhoneGap app.
+        A simple Percentage Calculator.
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="null" href="https://github.com/LucasGI">
+        LucasGI
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <icon density="mdpi" src="www/assets/res/ic_launcher/mipmap-mdpi/ic_launcher.png" />
+    <icon density="hdpi" src="www/assets/res/ic_launcher/mipmap-hdpi/ic_launcher.png" />
+    <icon density="xhdpi" src="www/assets/res/ic_launcher/mipmap-xhdpi/ic_launcher.png" />
+    <icon density="xxhdpi" src="www/assets/res/ic_launcher/mipmap-xxhdpi/ic_launcher.png" />
+    <icon density="xxxhdpi" src="www/assets/res/ic_launcher/mipmap-xxxhdpi/ic_launcher.png" />
     <preference name="loglevel" value="DEBUG" />
+    <preference name="DisallowOverscroll" value="true" />
 </widget>
