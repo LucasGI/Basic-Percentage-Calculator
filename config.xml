@@ -2,11 +2,11 @@
 <widget id="com.cosoftstudios.percentagecalculator" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Basic Percentage Calculator</name>
     <platform name="android">
-        <icon src="www/assets/res/ic_launcher/mipmap-mdpi/ic_launcher.png" density="mdpi" />
-        <icon src="www/assets/res/ic_launcher/mipmap-hdpi/ic_launcher.png" density="hdpi" />
-        <icon src="www/assets/res/ic_launcher/mipmap-xhdpi/ic_launcher.png" density="xhdpi" />
-        <icon src="www/assets/res/ic_launcher/mipmap-xxhdpi/ic_launcher.png" density="xxhdpi" />
-            <icon src="www/assets/res/ic_launcher/mipmap-xxxhdpi/ic_launcher.png" density="xxxhdpi" />
+        <icon src="www/assets/res/mipmap-mdpi/ic_launcher.png" density="mdpi" />
+        <icon src="www/assets/res/mipmap-hdpi/ic_launcher.png" density="hdpi" />
+        <icon src="www/assets/res/mipmap-xhdpi/ic_launcher.png" density="xhdpi" />
+        <icon src="www/assets/res/mipmap-xxhdpi/ic_launcher.png" density="xxhdpi" />
+            <icon src="www/assets/res/mipmap-xxxhdpi/ic_launcher.png" density="xxxhdpi" />
         <preference name="DisallowOverscroll" value="true"/>
     </platform>
     <description>
