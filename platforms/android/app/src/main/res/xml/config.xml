@@ -9,11 +9,11 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <icon density="mdpi" src="www/assets/res/ic_launcher/mipmap-mdpi/ic_launcher.png" />
-    <icon density="hdpi" src="www/assets/res/ic_launcher/mipmap-hdpi/ic_launcher.png" />
-    <icon density="xhdpi" src="www/assets/res/ic_launcher/mipmap-xhdpi/ic_launcher.png" />
-    <icon density="xxhdpi" src="www/assets/res/ic_launcher/mipmap-xxhdpi/ic_launcher.png" />
-    <icon density="xxxhdpi" src="www/assets/res/ic_launcher/mipmap-xxxhdpi/ic_launcher.png" />
+    <icon density="mdpi" src="www/assets/res/mipmap-mdpi/ic_launcher.png" />
+    <icon density="hdpi" src="www/assets/res/mipmap-hdpi/ic_launcher.png" />
+    <icon density="xhdpi" src="www/assets/res/mipmap-xhdpi/ic_launcher.png" />
+    <icon density="xxhdpi" src="www/assets/res/mipmap-xxhdpi/ic_launcher.png" />
+    <icon density="xxxhdpi" src="www/assets/res/mipmap-xxxhdpi/ic_launcher.png" />
     <preference name="loglevel" value="DEBUG" />
     <preference name="DisallowOverscroll" value="true" />
 </widget>
