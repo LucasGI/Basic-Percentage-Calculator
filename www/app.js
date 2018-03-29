@@ -1,8 +1,3 @@
-$( document ).ready(function(){
-    $("#calSelect").submit(function(e) {
-    e.preventDefault();
-});
-})
 var val3 = "value3"
 function submit() {
     var a = document.getElementById("value1").value;
@@ -11,7 +6,7 @@ function submit() {
         Materialize.toast("You Must Enter Both Values!", 2000, 'rounded')
         return false;
     } else {
-        calcUI(a, b);
+        result(a, b);
     }
 }
 
@@ -26,19 +21,24 @@ function result(a, b) {
         case 1:
             if (a = b) {
                 document.getElementById("value3").value = ("0%")
+                console.log("case 1:1")
             } else if (a < b) {
                 document.getElementById("value3").value = (toFixed(((b - a) / a) * 100) + "%")
+                console.log("case 1:2")
             } else if (a > b) {
-                document.getElementById("value").value = (toFixed(((a - b) / a) * 100) + "%")
+                document.getElementById("value3").value = (toFixed(((a - b) / a) * 100) + "%")
+                console.log("case 1:3")
             } else {
                 console.log("Error: Unknown Error in Function Select(); End Of If (case 1");
             }
             break;
         case 2:
             document.getElementById("value3").value = (toFixed(b * (a / 100)))
+            console.log("case 2")
             break
         case 3:
             document.getElementById("value3").value = (toFixed((b / a) * 100) + "%")
+            console.log("case 3")
             break;
         default:
             console.log("Error: Unknown Error in FUnction Select(); End Of Switch(select)")
