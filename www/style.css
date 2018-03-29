@@ -39,3 +39,8 @@ main {
 .margin.top.small {
   margin-top: 7px;
 }
+.container-large {
+  margin:0 auto;
+  max-width:1280px;
+  width:80%
+}
