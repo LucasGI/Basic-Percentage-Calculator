@@ -36,3 +36,6 @@ main {
   .input-field .prefix.active {
     color: #000;
 }
+.margin.top.small {
+  margin-top: 7px;
+}

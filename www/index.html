@@ -1,70 +1,93 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-        <title>Basic Percentage Calculator</title>
-        <link rel="stylesheet" href="materialize/css/materialize.min.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <script type="text/javascript" src="cordova.js"></script>
-        <nav>
-            <div class="nav-wrapper center-align purple darken-2">
-              <a class="logo center">Percentage Calculator</a>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Basic Percentage Calculator</title>
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="material-icons/material-icon.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script type="text/javascript" src="cordova.js"></script>
+    <nav>
+        <div class="nav-wrapper center-align purple darken-2">
+            <a class="logo center">Percentage Calculator</a>
+        </div>
+    </nav>
+    <main class="center container">
+        <form>
+            <div class="row">
+                <div class="col s12">
+                        <label for="calSelect">Choose Calculator:</label>
+                    <select id="calSelect" class="browser-default">
+                      <option value="0" disabled selected>Choose your option</option>
+                      <option value="1">Percentage Increase/Decrease</option>
+                      <option value="2">What percent of ___ is ___?</option>
+                      <option value="3">___ is what percent of ___?</option>
+                    </select>
+                  </div>
             </div>
-        </nav>
-        <main class="center">
-            <form>
-                <div class="row">
-                    <div class="col s12">
-                            <select>
-                            <option value="0" disabled selected>Choose your option</option>
-                            <option value="1">___ is what percent of ___?</option>
-                            <option value="2">What is __% of __?</option>
-                            <option value="3">Percentage increase/decrease</option>
-                            </select>
-                            <label>Choose calculator:</label>
-                    </div>
+            <div class="row">
+                <div class="input-field col s5">
+                    <input id="value1" type="number" step="any" class="validate">
+                    <label for="value1">Value 1</label>
                 </div>
-                <div class="row">
-                    <div class="col s5">
-                        b
-                    </div>
-                    <div class="col s2">
+                <div class="col s2">
+                    <br />
+                </div>
+                <div class="input-field col s5">
+                    <input id="value2" type="number" step="any" class="validate">
+                    <label for="value2">Value 2</label>
+                </div>
+                <div ckass="row">
+                    <button class="btn waves-effect waves-light purple darken-2" onClick="submbit()">Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+                <hr class="margin top small">
+                <div class="row center">
+                    <div class="col s3">
                         <br />
                     </div>
-                    <div class="col s5">
-                        c
+                    <div class="input-field col s6">
+                        <input id="value3" type="text" class="validate">
+                        <label for="value3">Result:</label>
                     </div>
-                    <div ckass="row">
-                        d
-                    </div>
-                    <div class="row">
-                        e
+                    <div class="col s3">
+                        <br />
                     </div>
                 </div>
-            </form>
-        </main>
-        <footer class="page-footer purple darken-2">
-            <div class="container">
-                <div class="row">
+            </div>
+        </form>
+    </main>
+    <footer class="page-footer purple darken-2">
+        <div class="container">
+            <div class="row">
                 <div class="col l6 s12">
                     <p class="grey-text text-lighten-4">App by: LucasGI, created using PhoneGap and Materialize</p>
                 </div>
-                </div>
             </div>
-            <div class="footer-copyright">
-                <div class="container">
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
                 https://github.com/LucasGI
-                </div>
             </div>
-        </footer>
-    </body>
-    <script src="jQuery/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
-    <script src="app.js"></script>
-    <script>
-    
-    </script>
+        </div>
+    </footer>
+</body>
+<script src="jQuery/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+<script src="app.js"></script>
+<script>
+    $( document ).ready(function(){
+    $("#calSelect").submit(function(e) {
+    e.preventDefault();
+});
+})
+</script>
+
 </html>
